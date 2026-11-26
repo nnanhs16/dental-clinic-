@@ -33,8 +33,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-     # Django Core
-    'django.contrib.admin',
+     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -56,6 +55,9 @@ INSTALLED_APPS = [
     'management',
     'human_resources',
     'system_admin',
+    'services', 
+    'medical_records',
+    'reviews',
 ]
 
 MIDDLEWARE = [
@@ -166,3 +168,4 @@ SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=60),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
 }
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
